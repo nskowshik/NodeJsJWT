@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "a194bbe2-e3ba-4def-b3be-d24ba5e3da99",
+		"name": "Doodle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product",
+							"contentType": "multipart/form-data",
+							"type": "file",
+							"src": "/F:/Doodle/Doodle_Kowshik/NodeAPI/sample/Product.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserRegister",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"aathi\",\r\n    \"email\" : \"aathins5@gmail.com\",\r\n    \"password\" : \"aathi23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"aathins5@gmail.com\",\r\n    \"password\" : \"aathi23\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Kowshik\",\r\n    \"contact\" : \"6849825998\",\r\n    \"email\" : \"aathins@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/customer/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product",
+							"type": "file",
+							"src": "/F:/Doodle/Doodle_Kowshik/Node_JWT/sample/Product.xlsx"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"aathins5@gmail.com\",\r\n    \"paymentAmount\" : \"95000\",\r\n    \"qty\": \"1\",\r\n    \"productId\": \"61e54d7bc7743e42c83c535c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/orders/createorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"orders",
+						"createorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOrder",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderNumber\": \"Order-202201171642419831717\",\r\n    \"email\" : \"aathins5@gmail.com\",\r\n    \"paymentAmount\" : \"5000\",\r\n    \"qty\": \"1\",\r\n    \"productId\": \"61e54d7bc7743e42c83c535c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/orders/updateorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"orders",
+						"updateorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOrder",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\" :  \"61e55677851112f089cf20c5\",\r\n    \"email\" : \"aathins5@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/orders/deleteorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"orders",
+						"deleteorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductByCustomerID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"aathins5@gmail.com\",\r\n    \"sort\" : {\r\n        \"paymentAmount\" : 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/customer/getcustomerproducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"customer",
+						"getcustomerproducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerOrderedProductCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1MGE4YjdkMDFlNmIxMTk5NjdkYjMiLCJlbWFpbCI6ImFhdGhpbnM1QGdtYWlsLmNvbSIsImlhdCI6MTY0MjQxMDI4MH0.gFcq8h5skx4OSlNS4Baxd4rtswGX7qvj4CvGeshN2cQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"aathins5@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/customer/getproductcount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"customer",
+						"getproductcount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
